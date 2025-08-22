@@ -20,7 +20,7 @@
     left:-5px;
     border-radius: 20px;
     top:-5px;
-    background: linear-gradient(45deg,#ffff00,black,red,blue,lightgreen,black,white,magenta,cyan,black);
+    background: linear-gradient(45deg,#ffff00,black,red,blue,black,white,magenta,cyan,black,orange,gold,lime,black);
     background-size:400%;
     width: calc(100% + 10px);
     height:calc(100% + 10px);
@@ -38,4 +38,15 @@
     font-family: "Special Gothic Expanded One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.stuff{
+    font-family: Special Gothic Expanded One;
+}
+.submit{
+    cursor: pointer;
+    transition: 0.5s transform;
+    position: relative;
+}
+.submit:hover{
+    transform: translateY(5px);
 }
