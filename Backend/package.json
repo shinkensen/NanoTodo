@@ -1,0 +1,32 @@
+{
+  "name": "nanotodo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinkensen/NanoTodo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/shinkensen/NanoTodo/issues"
+  },
+  "homepage": "https://github.com/shinkensen/NanoTodo#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.56.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "node": "^22.19.0",
+    "supabase": "^2.39.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
