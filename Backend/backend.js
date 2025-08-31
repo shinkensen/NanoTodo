@@ -1,7 +1,6 @@
 import {createClient} from '@supabase/supabase-js';
-import 'dotenv/config';
 
-const supabase = createClient(process.env.URL,process.env.PASS);
+const supabase = createClient("https://vwfwcwvlrssfhqxgqyoz.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ3Zndjd3ZscnNzZmhxeGdxeW96Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU4MTg0OTcsImV4cCI6MjA3MTM5NDQ5N30.aYVXMVzvLxhBT_o6pwlg75NLVlWppyTqjEy-8-L7mcE");
 import express from 'express';
 import cors from 'cors';
 const connect= express();
