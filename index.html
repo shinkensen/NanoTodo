@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+    <script type="module" src="/Frontend/signup.js"></script>
+</head>
+<body style="background-color: black;">
+<div class="login-container">
+<div class="login">
+    <div style="border-bottom: 1px solid white;margin-bottom: 25px;">
+    <h1 class="stuff">Welcome to Stream Pro</h1>
+    </div>
+    <div style="text-align: center;">
+    </div>
+    <div>
+    <div style="display: flex;">
+        <h4 class="stuff" style="margin-right: 5px;">Email:</h4>
+        <form>
+            <input type="text" id="email" style="background-color:black;margin-top:20px;width:207%;color:white">
+        </form>
+    </div>
+    <div style="display: flex;">
+        <h4 class="stuff" style="margin-right: 5px;">Password:</h4>
+        <form>
+            <input type="text" id="password" style="background-color:black;margin-top:20px;width:182%;color:white">
+        </form>
+    </div>
+    </div>
+    <div style="display:flex">
+    <div id="email_error" style="border:4px solid black; width:fit-content;border-radius:20px;height:30px;margin-right:-100px">
+        <h5 id="error1" class="stuff" style="margin-top: 0; padding:5px;color:black">Invalid Email</h5>
+    </div>
+    <div id="pass_error" style="border:4px solid black; width:fit-content;border-radius:20px;height:30px;margin-right:-100px;margin-top:45px;margin-left:-11px">
+        <h5 class="stuff" 
+        id="error2" 
+        style="margin-top: 0; padding:5px;color:black">
+        Invalid Pass
+        </h5>
+    </div>
+    <div class="submit" id="submitt" 
+    style="display:flex;border: 2px solid white;border-radius:10px;width:fit-content;margin:0 auto;padding-left:10px;padding-right:10px;margin-bottom: 20px;">
+        <a id="signup" href="javascript:void(0)" style="text-decoration:none;color:white">
+        <h3 class="stuff">Sign Up Now!</h3>
+        </a>
+    </div>
+    <div>
+        <a href="/Frontend/signin.html"><h5 class="stuff" 
+            style="text-align: center;margin-left:-80px;margin-right:20px;border:2px solid white;border-radius:5px;padding:5px;
+            text-decoration:none;color:white">Sign in</h5></a>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

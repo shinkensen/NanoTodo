@@ -1,0 +1,97 @@
+.login{
+    border: 0.000000001px solid black;
+    color:white;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right:50px;
+    display: block;
+    width:fit-content;
+    margin:0 auto;
+    margin-top:10%;
+    position: relative;
+    background: black;
+}
+.login h1{
+    text-align: center;
+}
+.login::before, .login::after{
+    content:'';
+    position: absolute;
+    left:-5px;
+    border-radius: 20px;
+    top:-5px;
+    background: linear-gradient(45deg,#ffff00,black,red,blue,black,white,magenta,cyan,black,orange,gold,lime,black);
+    background-size:400%;
+    width: calc(100% + 10px);
+    height:calc(100% + 10px);
+    z-index: -1;
+    animation: zap 15s infinite linear;
+}
+@keyframes zap {
+    0% {background-position: 0 0;}
+    100% {background-position:400% ;}
+}
+.login:after{
+    filter:blur(50px);
+}
+.special-gothic-expanded-one-regular {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.stuff{
+    font-family: Special Gothic Expanded One;
+}
+.submit{
+    cursor: pointer;
+    transition: 0.5s transform;
+    position: relative;
+}
+.submit:hover{
+    transform: translateY(5px);
+}
+.todolist{
+    width:75%; 
+    border:2px solid white; 
+    height:fit-content;
+    min-height:150px;
+    margin:0 auto;
+    border-radius: 20px;
+}
+.inputs{
+    background-color: rgb(30,30,30);
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border-left-color: white;
+    border-top-color: white;
+    width:80%;
+    height:110px;
+    font-size: 20px;
+    resize: none;           
+    padding: 10px;          
+    color: white;         
+    font-family: inherit;  
+    line-height: 1.4;       
+    vertical-align: top; 
+    margin-bottom: 15px;
+}
+li{
+    background-color: rgb(30,30,30);
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    border-left-color: white;
+    border-top-color: white;
+    margin-right: 200px;
+    width:75%;
+    height:110px;
+    font-size: 20px;
+    resize: none;           
+    padding: 10px;          
+    color: white;         
+    font-family: inherit;  
+    line-height: 1.4;       
+    vertical-align: top; 
+    margin-bottom: 15px;
+}

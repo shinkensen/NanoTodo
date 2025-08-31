@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+    <script src="/Frontend/mainpage.js" defer></script>
+</head>
+<body style="background-color: black;">
+    <nav>
+        <strong><h1 class="stuff" id="hello" style="color:white;text-align:center; font-size:2.5em;" id="header">Hello  </h1></strong>
+        <button id="out" style="background-color:red;border-radius:10px;height:30px;margin:0 auto;display:block;margin-bottom:50px;margin-top:-20px" class="stuff">Log Out</button>
+    </nav>
+        <form class="todolist" style="display:flex;">
+            <textarea class="inputs" id="input-text" placeholder="Enter Task Details Here!"></textarea>
+            <div id="submit"style="background-color:rgb(0,255,0);height:45px;width:150px;border-radius:10px;margin-left:20px;margin-top:50px;border-bottom:5px solid green;">
+                <h1 class="stuff" style="margin-top:0; margin-left:35px">Add</h1>
+            </div>
+        </form>
+    <strong><h1 class="stuff" style="color:white;text-align:center; font-size:2em;" id="header"><span style="border-bottom:2px solid white;width:fit-content;">Today's Tasks </span> </h1></strong>
+    <div style="margin-top:20px">
+        <ul id="todo-list"></ul>
+    </div>
+</body>
+</html>
