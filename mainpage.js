@@ -1,6 +1,6 @@
 const token=localStorage.getItem('jwt');
 if (!token){
-    window.location.href = '/signin.html';
+    window.location.href = '/NanoTodo/signin.html';
 }
 const names = document.getElementById("hello");
 const todoList = document.getElementById('todo-list');
@@ -100,5 +100,5 @@ fetchTodos();
 logout.addEventListener('click',() =>{
     localStorage.removeItem('jwt');
     localStorage.removeItem('name');
-    window.location.href='/signin.html';
+    window.location.href='/NanoTodo/signin.html';
 })

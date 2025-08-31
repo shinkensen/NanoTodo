@@ -44,7 +44,7 @@ submit.addEventListener("click", ()=>{
         document.getElementById("error1").style.color="black";
         error_pass.style.border="4px solid black";
         document.getElementById("error2").style.color="black";
-        window.location.href="/signin.html"
+        window.location.href="/NanoTodo/signin.html"
     }
     else if (!email_error(email)){
         error_email.style.border="4px solid red";
