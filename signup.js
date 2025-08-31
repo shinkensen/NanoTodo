@@ -14,7 +14,7 @@ async function signUp(email,password) {
     else{
         console.log("Signed up:" + data);
     }
-    window.location.href="/NanoTodo/signin.html";
+    //window.location.href="/NanoTodo/signin.html";
 }
 async function getCurrentUser() {
     const { data: { user } } = await sqlthing.auth.getUser();
