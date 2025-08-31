@@ -1,6 +1,6 @@
 const token=localStorage.getItem('jwt');
 if (!token){
-    window.location.href = '/Frontend/signin.html';
+    window.location.href = '/signin.html';
 }
 const names = document.getElementById("hello");
 const todoList = document.getElementById('todo-list');
