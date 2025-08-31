@@ -14,6 +14,7 @@ async function signUp(email,password) {
     else{
         console.log("Signed up:" + data);
     }
+    window.location.href="/NanoTodo/signin.html";
 }
 async function getCurrentUser() {
     const { data: { user } } = await sqlthing.auth.getUser();
@@ -39,12 +40,11 @@ submit.addEventListener("click", ()=>{
     console.log(email);
     console.log(pass);
     if (email_error(email)&&pass_error(pass)) {
-        signUp(email,pass);
         error_email.style.border="4px solid black";
         document.getElementById("error1").style.color="black";
         error_pass.style.border="4px solid black";
         document.getElementById("error2").style.color="black";
-        window.location.href="/NanoTodo/signin.html"
+        signUp(email,pass);
     }
     else if (!email_error(email)){
         error_email.style.border="4px solid red";
