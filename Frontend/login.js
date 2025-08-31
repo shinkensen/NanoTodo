@@ -23,18 +23,10 @@ async function login(email,password) {
         error5.style.color = "black";
         error5c.style.backgroundColor= "black";
         console.log("Successfully logged in: ",data);
-        window.location.href='/Frontend/home.html';
         const token= data.session.access_token;
-        await fetch('http://localhost:3000/auth',{
-            method: 'POST',
-            headers : {
-                'Content-Type' : 'application/json',
-                'Authorization' : `Bearer ${token}`
-            },
-            body:JSON.stringify({
-                text: "Frontend-Backend"
-            })
-        });
+        localStorage.setItem('jwt',token);
+        localStorage.setItem('name',email)
+        window.location.href='/Frontend/home.html';
     }
 }
 login_submit.addEventListener("click", ()=>{

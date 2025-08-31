@@ -29,8 +29,8 @@ let error_pass=document.getElementById("pass_error");
 
 //sign up stuff
 console.log("hello");
-let email=document.getElementById("email").value;
-let pass=document.getElementById("password").value;
+let email=document.getElementById("email");
+let pass=document.getElementById("password");
 
 const submit=document.getElementById("submitt");
 submit.addEventListener("click", ()=>{
@@ -44,6 +44,7 @@ submit.addEventListener("click", ()=>{
         document.getElementById("error1").style.color="black";
         error_pass.style.border="4px solid black";
         document.getElementById("error2").style.color="black";
+        window.location.href="/Frontend/signin.html"
     }
     else if (!email_error(email)){
         error_email.style.border="4px solid red";
@@ -65,29 +66,4 @@ function pass_error(password){
     }
     return true;
 }
-
-
-//login stuff
-let login_email=document.getElementById("login_email").value;
-let login_pass=document.getElementById("login_password").value;
-const login_submit=document.getElementById("login_submit");
-let error5=document.getElementById("error5");
-async function login(email,password) {
-    let {data,error}= await sqlthing.auth.signInWithPassword({email,password});
-    if (error){
-        console.log("login error: ", error)
-        error5.style.color = "red"
-    }
-    else{
-        error5.style.color = "black"
-        console.log("Successfully logged in: ",data)
-    }
-}
-login_submit.addEventListener("click", ()=>{
-    login_email=document.getElementById("login_email").value;
-    login_pass=document.getElementById("login_password").value;
-    console.log("welp")
-    login(login_email,login_pass);
 })
-})
-console.log("login_submit element:", document.getElementById("login_submit"));

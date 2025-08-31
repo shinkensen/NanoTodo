@@ -50,3 +50,48 @@
 .submit:hover{
     transform: translateY(5px);
 }
+.todolist{
+    width:75%; 
+    border:2px solid white; 
+    height:fit-content;
+    min-height:150px;
+    margin:0 auto;
+    border-radius: 20px;
+}
+.inputs{
+    background-color: rgb(30,30,30);
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border-left-color: white;
+    border-top-color: white;
+    width:80%;
+    height:110px;
+    font-size: 20px;
+    resize: none;           
+    padding: 10px;          
+    color: white;         
+    font-family: inherit;  
+    line-height: 1.4;       
+    vertical-align: top; 
+    margin-bottom: 15px;
+}
+li{
+    background-color: rgb(30,30,30);
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    border-left-color: white;
+    border-top-color: white;
+    margin-right: 200px;
+    width:75%;
+    height:110px;
+    font-size: 20px;
+    resize: none;           
+    padding: 10px;          
+    color: white;         
+    font-family: inherit;  
+    line-height: 1.4;       
+    vertical-align: top; 
+    margin-bottom: 15px;
+}
