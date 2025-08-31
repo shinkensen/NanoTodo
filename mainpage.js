@@ -12,7 +12,7 @@ text =  localStorage.getItem('name').split("@")[0];
 names.textContent ="Hello " + text + " 👋";
 async function fetchTodos() {
     try {
-        const res = await fetch('http://localhost:3000/todos', {
+        const res = await fetch('https://nanotodo.onrender.com/todos', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -44,7 +44,7 @@ function renderTodos(todos) {
 
         deleteBtn.addEventListener('click', async() =>{
             try {
-                const res =await fetch('http://localhost:3000/del',{
+                const res =await fetch('https://nanotodo.onrender.com/del',{
                     method: 'DELETE',
                     headers:{
                         'Content-Type' : 'application/json',
@@ -73,7 +73,7 @@ addForm.addEventListener('click', async (e) => {
     const text = addInput.value.trim();
     if (!text) return;
     try {
-        const res = await fetch('http://localhost:3000/auth', {
+        const res = await fetch('https://nanotodo.onrender.com/auth', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -100,5 +100,5 @@ fetchTodos();
 logout.addEventListener('click',() =>{
     localStorage.removeItem('jwt');
     localStorage.removeItem('name');
-    window.location.href='/Frontend/signin.html';
+    window.location.href='/signin.html';
 })
