@@ -26,7 +26,7 @@ async function login(email,password) {
         const token= data.session.access_token;
         localStorage.setItem('jwt',token);
         localStorage.setItem('name',email)
-        window.location.href='/home.html';
+        window.location.href='/NanoTodo/home.html';
     }
 }
 login_submit.addEventListener("click", ()=>{
